@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Star Wars 2.0</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao" />
+        <label for="menu">
+          <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link"> Darth Maul</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link"> Ahsoka</a>
+          </li>
+        </ul>
+      </div>
+
+      <img src="img/logo_CW.png" alt="logo de Clone Wars" class="logo__cw" />
+
+      <div class="container">
+        <a href="galactic.html" class="container__link"
+          ><img
+            src="img/logo_galactic-republic.png"
+            class="container__faccao galactic"
+            alt="logo da republica galatica"
+        /></a>
+        <a href="separatist.html" class="container__link"
+          ><img
+            src="img/logo_separatist.png"
+            class="container__faccao separatist"
+            alt="logo dos separatistas"
+        /></a>
+      </div>
+    </header>
+     
+    <section class="sobre">
+      <h2 class="sobre__titulo">Sobre</h2>
+      <p class="sobre__texto">Star Wars: The Clone Wars é uma série de animação em 3D criada por George Lucas e produzida pela empresa estadunidense Lucasfilm.</p> 
+      <p>A série foi baseada no filme homônimo lançado em 2008 e destacou-se como uma grande série original do Cartoon Network.</p>
+
+    </section>
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Posters</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/cw-s1.jpg" alt="poster da temporada 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cw-s2.jpg" alt="poster da temporada 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cw-s3.jpg" alt="poster da temporada 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cw-s4.jpg" alt="poster da temporada 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cw-s5.jpg" alt="poster da temporada 5">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cw-s6.jpg" alt="poster da temporada 6">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cw-s7.jpg" alt="poster da temporada 7">
+          </div>
+           <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+      });
+    </script>
+  </body>
+</html>
