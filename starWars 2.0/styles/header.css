@@ -1,4 +1,5 @@
 .cabecalho__menu-hamburguer {
+  cursor: pointer;
   height: 24px;
   width: 24px;
   background-repeat: no-repeat;
@@ -47,7 +48,7 @@
   display: none;
   position: absolute;
   top: 100%;
-  width: 60vw;
+  width: 12em;
 }
 
 .container__botao:checked ~ .lista-menu {
@@ -65,4 +66,33 @@
 
 .container__botao {
   display: none;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--branco);
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 1em 1em 1em 3em;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: 2s;
 }

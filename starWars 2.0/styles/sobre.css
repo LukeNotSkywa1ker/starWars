@@ -5,6 +5,7 @@
 }
 
 .sobre__titulo {
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
   margin: 1em 0 0 0;

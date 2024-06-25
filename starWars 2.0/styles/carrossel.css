@@ -7,6 +7,7 @@
 }
 
 .swiper-slide img {
+  color: var(--amarelo);
   width: 100%;
 }
 
